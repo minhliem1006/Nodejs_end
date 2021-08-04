@@ -1,0 +1,26 @@
+<div class="mt-4">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tên khóa học</th>
+                <th scope="col">videoId</th>
+                <th scope="col">Thời gian tạo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            {{#each item}}
+            <th scope="row">{{sum @index 1}}</th>
+                <td>{{this.name}}</td>
+                <td>{{this.videoId}}</td>
+                <td>{{this.createdAt}}</td>
+                <td><a href="/me/{{this._id}}/edit" class="btn btn-link">Sửa</a>
+                    <button type="button" class="btn btn-link">Xóa</button>
+                </td>
+                
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

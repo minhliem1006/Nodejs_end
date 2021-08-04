@@ -1,0 +1,18 @@
+<div class="mt-4">
+
+    <form method="POST" action="/me/{{item._id}}?_method=PUT">
+        <div class="form-group">
+            <label>Name</label>
+            <input name="name" value="{{item.name}}" type="text" class="form-control" placeholder="Nhập name">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea name="description" class="form-control">{{item.description}}</textarea>
+        </div>
+            <label>VideoId</label>
+            <input name="videoId" value="{{item.videoId}}" type="text" class="form-control" placeholder="VideoId">
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Sửa</button>
+    </form>
+
+</div>
